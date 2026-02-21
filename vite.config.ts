@@ -4,18 +4,6 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/Test-dental-mercado/",
-  build: {
-    outDir: "docs",
-  },
-  server: {
-    host: "::",
-    port: 8080,
-    hmr: {
-      overlay: false,
-    },
-  },
-
   plugins: [
     react(),
     mode === "development" && componentTagger()
