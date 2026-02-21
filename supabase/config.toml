@@ -1,0 +1,2 @@
+[functions.hapio]
+verify_jwt = false
